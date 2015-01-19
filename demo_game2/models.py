@@ -29,11 +29,13 @@ keywords = ()
 
 class Constants:
     players_per_group = 1
-    name_in_url = 'matching_pennies'
-    number_of_rounds = 3
+    name_in_url = 'demo_game2'
+    number_of_rounds = 1
 
 class Subsession(otree.models.BaseSubsession):
+
     pass
+
 
 class Group(otree.models.BaseGroup):
 
@@ -49,31 +51,27 @@ class Player(otree.models.BasePlayer):
     subsession = models.ForeignKey(Subsession)
     # </built-in>
 
+    demo_field1 = models.CharField(
+        doc="""field With radiobutton input.""",
+        widget=widgets.RadioSelect(),
+    )
 
     def set_payoff(self):
         self.payoff = c(0)
 
-    penny_side = models.CharField(
-        choices=['Head', 'Tail'],
-        doc="""Heads or tails""",
-        widget=widgets.RadioSelect()
-    )
 
+    training_question_1 = models.CharField(widget=widgets.RadioSelect())
+    training_question_2 = models.CharField(widget=widgets.RadioSelect())
+    training_question_3 = models.CharField(widget=widgets.RadioSelect())
 
+    def training_question_1_choices(self):
+        return ['Head', 'Tail']
 
+    def training_question_2_choices(self):
+        return ['Head', 'Tail']
 
-    # training_question_1 = models.CharField(widget=widgets.RadioSelect())
-    # training_question_2 = models.CharField(widget=widgets.RadioSelect())
-    # training_question_3 = models.CharField(widget=widgets.RadioSelect())
-    #
-    # def training_question_1_choices(self):
-    #     return ['Head', 'Tail']
-    #
-    # def training_question_2_choices(self):
-    #     return ['Head', 'Tail']
-    #
-    # def training_question_3_choices(self):
-    #     return ['Head', 'Tail']
+    def training_question_3_choices(self):
+        return ['Head', 'Tail']
 
 
 

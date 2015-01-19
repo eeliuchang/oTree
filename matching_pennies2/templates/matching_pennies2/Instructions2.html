@@ -1,0 +1,71 @@
+{% load i18n %}
+
+<style type="text/css">
+    ul {
+        list-style-type:circle;
+        padding-left:20px;
+    }
+    h3.panel-sub-heading {
+        padding-bottom:10px;
+        padding-left:4px;
+    }
+</style>
+
+<div class="well well-lg" style="padding-top:5px; padding-bottom:15px; margin-top:20px;">
+
+    <h3 class="panel-sub-heading">
+        Instructions for Part III:
+    </h3>
+
+    <p>
+        You will now play 50 rounds of “matching pennies” against the same participant with whom you were paired in the previous part of the experiment. In each round, both of you will secretly choose between heads (H) and tails (T). Once you and your opponent have both submitted your choices, they will be revealed simultaneously.
+    </p>
+
+    <p>
+        You will win [lose] one lottery ticket if your own choice of H or T matches that of your opponent, i.e. if both of you play heads or if both of you choose tails. You will lose [win] one lottery ticket if your choice does not match that of your opponent, i.e. if one of you plays H while the other chooses T.
+    </p>
+
+    <p>
+        Your opponents’ payoffs are exactly reversed. That is, your opponent will lose [win] a ticket if your choices match, and he/she will win [lose] one ticket if they do not match.
+    </p>
+
+    <p>
+        The following matrix summarizes all payoffs, depending on your own choice and that of your opponent.
+    </p>
+
+
+    <table class='table table-bordered text-center' style='width: auto; margin: auto'>
+        <tr>
+            <th colspan=2></th>
+            <th colspan=2>Opponent’s Choice</th>
+        </tr>
+        <tr>
+            <th colspan=2></th>
+            <th>H</th>
+            <th>T</th>
+        </tr>
+        <tr>
+            <th rowspan=2><span class=rotate90>You</span></th>
+            <th>H</th>
+            <td>1 [-1]     ,  -1 [1] </td>
+            <td>-1 [1]     ,     1 [-1]</td>
+        </tr>
+        <tr>
+            <th>T</th>
+            <td>-1 [1]     ,     1 [-1]</td>
+            <td>1 [-1]     ,     -1 [1]</td>
+        </tr>
+    </table>
+
+
+
+    <p>
+        In short, it is in your own best interest to choose H whenever you suspect that your opponent will play H [T], whereas you should play T when you think that your opponent will choose T [H].
+    </p>
+
+    <p>
+        (For your opponent, however, it is best to play T [H] whenever he/she suspects that you will choose H, whereas he/she should play H [T] if he/she thinks that you will choose T.)
+    </p>
+
+
+</div>

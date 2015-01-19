@@ -23,7 +23,13 @@ def session_types():
             name='demo_game',
             display_name="Demo Game",
             num_demo_participants=1,
-            subsession_apps=['demo_game'],
+            subsession_apps=['consent_form','demo_game'],
+        ),
+        SessionType(
+            name='demo_game2',
+            display_name="Demo Game2",
+            num_demo_participants=1,
+            subsession_apps=['consent_form','demo_game2'],
         ),
         SessionType(
             name='public_goods',
@@ -64,19 +70,15 @@ def session_types():
             subsession_apps=['dictator', 'feedback', 'lab_results'],
         ),
         SessionType(
-            name='matching_pennies',
-            display_name="Matching Pennies",
+            name='random_matching_pennies',
+            display_name="Random Matching Pennies",
             num_demo_participants=2,
             subsession_apps=[
-                'matching_pennies', 'survey_sample', 'lab_results'
+                'consent_form','matching_pennies','matching_pennies1','matching_pennies2','matching_pennies3'
             ],
         ),
-        SessionType(
-            name='traveler_dilemma',
-            display_name="Traveler's Dilemma",
-            num_demo_participants=2,
-            subsession_apps=['traveler_dilemma', 'feedback', 'lab_results'],
-        ),
+
+
         SessionType(
             name='survey',
             display_name="Survey",

@@ -1,0 +1,100 @@
+{% load i18n %}
+
+<style type="text/css">
+    ul {
+        list-style-type:circle;
+        padding-left:20px;
+    }
+    h3.panel-sub-heading {
+        padding-bottom:10px;
+        padding-left:4px;
+    }
+</style>
+
+<div class="well well-lg" style="padding-top:5px; padding-bottom:15px; margin-top:20px;">
+
+    <h3 class="panel-sub-heading">
+        Instructions for Part IV:
+    </h3>
+
+    <p>
+        You will now play 50 rounds of “matching pennies” against the same participant with whom you were paired in the previous part of the experiment. In each round, both of you will secretly choose between heads (H) and tails (T). Once you and your opponent have both submitted your choices, they will be revealed simultaneously.
+    </p>
+
+    <p>
+        You will win [lose] one lottery ticket if your own choice of H or T matches that of your opponent, i.e. if both of you play heads or if both of you choose tails. You will lose [win] one lottery ticket if your choice does not match that of your opponent, i.e. if one of you plays H while the other chooses T.
+    </p>
+
+    <p>
+        Your opponents’ payoffs are exactly reversed. That is, your opponent will lose [win] a ticket if your choices match, and he/she will win [lose] one ticket if they do not match.
+    </p>
+
+    <p>
+        The following matrix summarizes all payoffs, depending on your own choice and that of your opponent.
+    </p>
+
+
+    <table class='table table-bordered text-center' style='width: auto; margin: auto'>
+        <tr>
+            <th colspan=2></th>
+            <th colspan=2>Opponent’s Choice</th>
+        </tr>
+        <tr>
+            <th colspan=2></th>
+            <th>H</th>
+            <th>T</th>
+        </tr>
+        <tr>
+            <th rowspan=2><span class=rotate90>You</span></th>
+            <th>H</th>
+            <td>1 [-1]     ,  -1 [1] </td>
+            <td>-1 [1]     ,     1 [-1]</td>
+        </tr>
+        <tr>
+            <th>T</th>
+            <td>-1 [1]     ,     1 [-1]</td>
+            <td>1 [-1]     ,     -1 [1]</td>
+        </tr>
+    </table>
+
+
+
+    <p>
+        In short, it is in your own best interest to choose H whenever you suspect that your opponent will play H [T], whereas you should play T when you think that your opponent will choose T [H].
+    </p>
+
+    <p>
+        (For your opponent, however, it is best to play T [H] whenever he/she suspects that you will choose H, whereas he/she should play H [T] if he/she thinks that you will choose T.)
+    </p>
+
+    <p>
+        In addition to submitting your choice of H or T, we will ask you how likely you think it is that your opponent plays H. By using the mouse to drag the slider on the next screen, you can enter probabilities from 0% (meaning “no chance, he/she plays T with certainty”) to 100% (meaning “he/she plays H for sure”). The slider can also be moved via the mouse wheel or the arrow keys on your keyboard. All integer values between 0 and 100 are selectable, i.e. 0,1,2,3,…,100.
+    </p>
+
+    <p>
+        In addition to the payoffs described above, you will be rewarded for the accuracy of your predictions. You may now open the envelope on your desk. In the envelope, you will find a table that summarizes how many lottery tickets you will win or lose depending on your stated beliefs and your opponent’s actual choice.
+    </p>
+
+    <p>
+        For example, if you state that your opponent plays H with 100% probability, you will receive one lottery ticket if he/she actually chooses H, but you will lose three tickets if he/she chooses T instead. Similarly, if you state that your opponents plays H with only a 25% probability, then you will lose 1.25 tickets if he/she does play H, whereas you will win .75 tickets if he/she chooses T. In order to see the payoffs associated with the current value at which the slider is set, you can always click on the button labeled “Scoring Rule.”
+    </p>
+
+    <p>
+        All payoffs have been constructed such that it is always in your own best interest to submit your true belief of how likely you think your opponent is to play H. To reiterate, if you think your opponents will choose H with a 15% probability, your expected payoff will be maximized if you submit “15.” If, however, you think the probability that your opponents chooses H is 65%, then you should submit “65,” and so on.
+    </p>
+
+    <p>
+        The total number of lottery tickets that you win or lose during this part of the experiment will be rounded to the nearest integer value.]
+    </p>
+
+    <p>
+        To start out you will receive an additional 100 tickets.
+    </p>
+
+    <p>
+        When you are ready, please press “Next" to proceed to the next screen.
+     </p>
+
+
+
+</div>

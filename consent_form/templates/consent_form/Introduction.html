@@ -1,0 +1,26 @@
+{% extends "global/Base.html" %}
+{% load staticfiles floppyforms otree_tags %}
+{% load i18n %}
+
+{% block title %}
+    Introduction
+{% endblock %}
+
+{% block content %}
+
+    {% include 'consent_form/Overview.html' %}
+
+   <p>
+    Statement of Consent:<br>
+   I have read and understood the information in this consent form. All my questions about the research have been answered to my satisfaction. I agree to participate.<br>
+
+   </p>
+
+    {% formrow form.accept with label="Do you consent?" %}
+
+
+
+
+    {% next_button %}
+
+{% endblock %}

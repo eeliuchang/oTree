@@ -29,7 +29,7 @@ keywords = ()
 
 class Constants:
     players_per_group = 1
-    name_in_url = 'matching_pennies'
+    name_in_url = 'matching_pennies1'
     number_of_rounds = 3
 
 class Subsession(otree.models.BaseSubsession):
@@ -40,6 +40,8 @@ class Group(otree.models.BaseGroup):
     # <built-in>
     subsession = models.ForeignKey(Subsession)
     # </built-in>
+    def next_round_groups(self, current_round_group_matrix):
+        return current_round_group_matrix
 
 
 class Player(otree.models.BasePlayer):
@@ -48,6 +50,10 @@ class Player(otree.models.BasePlayer):
     group = models.ForeignKey(Group, null=True)
     subsession = models.ForeignKey(Subsession)
     # </built-in>
+
+    def other_player(self):
+        """Returns the opponent of the current player"""
+        return self.get_others_in_group()[0]
 
 
     def set_payoff(self):
@@ -58,7 +64,6 @@ class Player(otree.models.BasePlayer):
         doc="""Heads or tails""",
         widget=widgets.RadioSelect()
     )
-
 
 
 

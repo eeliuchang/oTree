@@ -53,7 +53,9 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_OTREE_APPS = [
+    'consent_form',
     'demo_game',
+    'demo_game2',
     'trust',
     'lab_results',
     'public_goods',
@@ -61,6 +63,9 @@ INSTALLED_OTREE_APPS = [
     'cournot_competition',
     'dictator',
     'matching_pennies',
+    'matching_pennies1',
+    'matching_pennies2',
+    'matching_pennies3',
     'traveler_dilemma',
     'survey',
     'bargaining',

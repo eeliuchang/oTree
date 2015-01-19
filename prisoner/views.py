@@ -7,10 +7,10 @@ from .models import Constants
 
 def variables_for_all_templates(self):
 
-    return {'cooperate_amount': Constants.cooperate_amount,
-            'cooperate_defect_amount': Constants.cooperate_defect_amount,
-            'defect_amount': Constants.defect_amount,
-            'defect_cooperate_amount': Constants.defect_cooperate_amount,
+    return {'h_amount': Constants.h__amount,
+            'h_t_amount': Constants.h_t_amount,
+            't_amount': Constants.t_amount,
+            't_h_amount': Constants.t_h_amount,
             'total_q': 1}
 
 
